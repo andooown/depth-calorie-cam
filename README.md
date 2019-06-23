@@ -6,7 +6,8 @@
     ```
     $ git clone git@github.com:andooown/depth-calorie-cam.git
     ```
-2. Install required gems via bundler.
+2. Download CoreML model files from [here](https://drive.google.com/drive/folders/15Q_psdWeRN5Xj7cCUwc98UY0S19E098d?usp=sharing) and put them into `DepthCalorieCam/Estimations/Classification` and `DepthCalorieCam/Estimations/Segmentation`.
+3. Install required gems via bundler.
     ```
     $ bundle install --path vendor/bundle
     ```
