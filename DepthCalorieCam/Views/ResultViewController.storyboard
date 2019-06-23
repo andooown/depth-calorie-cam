@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zcv-5j-ruY">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result-->
+        <scene sceneID="qB5-fC-neY">
+            <objects>
+                <viewController title="Result" id="Zcv-5j-ruY" customClass="ResultViewController" customModule="DepthCalorieCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xtt-bq-xDb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rGy-zN-DKH">
+                                <rect key="frame" x="0.0" y="64" width="414" height="552"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rGy-zN-DKH" secondAttribute="height" multiplier="3:4" id="Hel-xl-S18"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IY-qp-2M4" userLabel="Mask Gray View">
+                                <rect key="frame" x="0.0" y="64" width="414" height="552"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000.0 kcal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="tLi-cT-VzH">
+                                <rect key="frame" x="20" y="626" width="374" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tLi-cT-VzH" firstAttribute="top" secondItem="rGy-zN-DKH" secondAttribute="bottom" constant="10" id="0Zm-zA-ukS"/>
+                            <constraint firstItem="2IY-qp-2M4" firstAttribute="height" secondItem="rGy-zN-DKH" secondAttribute="height" id="Ihq-sk-UGW"/>
+                            <constraint firstItem="ExS-t8-Wqs" firstAttribute="trailing" secondItem="rGy-zN-DKH" secondAttribute="trailing" id="KbI-es-Crw"/>
+                            <constraint firstItem="2IY-qp-2M4" firstAttribute="width" secondItem="rGy-zN-DKH" secondAttribute="width" id="MYq-2S-95q"/>
+                            <constraint firstItem="2IY-qp-2M4" firstAttribute="centerY" secondItem="rGy-zN-DKH" secondAttribute="centerY" id="bNc-8I-VBP"/>
+                            <constraint firstItem="tLi-cT-VzH" firstAttribute="leading" secondItem="ExS-t8-Wqs" secondAttribute="leading" constant="20" id="bgx-q2-IpX"/>
+                            <constraint firstItem="ExS-t8-Wqs" firstAttribute="bottom" secondItem="tLi-cT-VzH" secondAttribute="bottom" constant="10" id="cY1-5k-fDL"/>
+                            <constraint firstItem="rGy-zN-DKH" firstAttribute="leading" secondItem="ExS-t8-Wqs" secondAttribute="leading" id="igN-wR-KYN"/>
+                            <constraint firstItem="rGy-zN-DKH" firstAttribute="top" secondItem="ExS-t8-Wqs" secondAttribute="top" id="izr-wN-987"/>
+                            <constraint firstItem="ExS-t8-Wqs" firstAttribute="trailing" secondItem="tLi-cT-VzH" secondAttribute="trailing" constant="20" id="rUO-Rj-Zmu"/>
+                            <constraint firstItem="2IY-qp-2M4" firstAttribute="centerX" secondItem="rGy-zN-DKH" secondAttribute="centerX" id="v9m-yE-ivJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ExS-t8-Wqs"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="calorieLabel" destination="tLi-cT-VzH" id="hc8-3e-YRh"/>
+                        <outlet property="captureImageView" destination="rGy-zN-DKH" id="vWE-Lx-hb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fy1-Hd-KeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="-123.39901477832512"/>
+        </scene>
+    </scenes>
+</document>

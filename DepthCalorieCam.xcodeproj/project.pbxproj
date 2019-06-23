@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B75CB3A21E85CEE00E92684 /* DetectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB3921E85CEE00E92684 /* DetectionResult.swift */; };
+		6B75CB3C21E85E0100E92684 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB3B21E85E0100E92684 /* CGRect+Extensions.swift */; };
+		6B75CB3E21E863FB00E92684 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB3D21E863FB00E92684 /* CGFloat+Extensions.swift */; };
+		6B75CB4521E8762800E92684 /* ClassificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB4421E8762800E92684 /* ClassificationResult.swift */; };
+		6B75CB4721E876C500E92684 /* Estimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB4621E876C500E92684 /* Estimation.swift */; };
+		6B75CB4921E87B3E00E92684 /* MLMultiArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB4821E87B3E00E92684 /* MLMultiArray+Extensions.swift */; };
+		6B75CB4B21E87C2C00E92684 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75CB4A21E87C2C00E92684 /* Array+Extensions.swift */; };
+		6BB552D821EDB17C00E22371 /* EasyImagy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB552D721EDB17C00E22371 /* EasyImagy.framework */; };
+		AA016710220A138900135D65 /* UNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01670F220A138900135D65 /* UNet.swift */; };
+		AA016712220A15C100135D65 /* UNet-560.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AA016711220A15C100135D65 /* UNet-560.mlmodel */; };
+		AA0855C922BFE8DF0030D382 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA851221F30970053416C /* FirebaseAnalytics.framework */; };
+		AA0855CA22BFE8DF0030D382 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA84D221F2D850053416C /* FirebaseCore.framework */; };
+		AA0855CC22BFE8DF0030D382 /* FirebaseCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA84F221F2D960053416C /* FirebaseCrash.framework */; };
+		AA0855CE22BFE8DF0030D382 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA849221F2D590053416C /* GoogleAppMeasurement.framework */; };
+		AA0855D022BFE8DF0030D382 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA847221F2D430053416C /* GoogleUtilities.framework */; };
+		AA0855D122BFE8DF0030D382 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA84B221F2D6E0053416C /* nanopb.framework */; };
+		AA0855D222BFE8DF0030D382 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA857221F328D0053416C /* Protobuf.framework */; };
+		AA0855D422BFE9200030D382 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0855D322BFE9200030D382 /* CoreTelephony.framework */; };
+		AA0855D522BFE9CB0030D382 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA859221F329C0053416C /* FirebaseInstanceID.framework */; };
+		AA0855D622BFE9DA0030D382 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA862221F37640053416C /* GoogleToolboxForMac.framework */; };
+		AA1541DF220648F900AD0FA0 /* ResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1541DE220648F900AD0FA0 /* ResultViewController.storyboard */; };
+		AA1541E12206492D00AD0FA0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541E02206492D00AD0FA0 /* ResultViewController.swift */; };
+		AA1541E32208BA6800AD0FA0 /* EstimationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541E22208BA6800AD0FA0 /* EstimationResult.swift */; };
+		AA1541E52208BC9D00AD0FA0 /* ResultImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541E42208BC9D00AD0FA0 /* ResultImageView.swift */; };
+		AA1541E72208C3A700AD0FA0 /* RectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541E62208C3A700AD0FA0 /* RectView.swift */; };
+		AA1541EB2209FA9500AD0FA0 /* ResultDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1541EA2209FA9500AD0FA0 /* ResultDetailViewController.storyboard */; };
+		AA1541ED2209FAD900AD0FA0 /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541EC2209FAD900AD0FA0 /* ResultDetailViewController.swift */; };
+		AA2E9273222C755400512C08 /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2E9272222C755400512C08 /* PointCloud.swift */; };
+		AA5CC60A222AD6FC00E27833 /* BubbleLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CC609222AD6FC00E27833 /* BubbleLevelView.swift */; };
+		AA626C1122154549003061C7 /* Xception-299.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AA626C1022154549003061C7 /* Xception-299.mlmodel */; };
+		AA626C1322154572003061C7 /* Xception.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA626C1222154572003061C7 /* Xception.swift */; };
+		AAA23DF221DEDE650036EF02 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA23DF121DEDE650036EF02 /* CaptureButton.swift */; };
+		AABFA844221F297C0053416C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AABFA843221F297C0053416C /* GoogleService-Info.plist */; };
+		AABFA846221F2CD90053416C /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABFA845221F2CD90053416C /* SVProgressHUD.framework */; };
+		AAC52CE021C7F208009782D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC52CDF21C7F208009782D7 /* AppDelegate.swift */; };
+		AAC52CE221C7F208009782D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC52CE121C7F208009782D7 /* ViewController.swift */; };
+		AAC52CE521C7F208009782D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC52CE321C7F208009782D7 /* Main.storyboard */; };
+		AAC52CE721C7F209009782D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC52CE621C7F209009782D7 /* Assets.xcassets */; };
+		AAC52CEA21C7F209009782D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC52CE821C7F209009782D7 /* LaunchScreen.storyboard */; };
+		AAC52CF521C7F209009782D7 /* DepthCalorieCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC52CF421C7F209009782D7 /* DepthCalorieCamTests.swift */; };
+		AAF7C59621D2164E007E5861 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7C59521D2164E007E5861 /* CameraViewController.storyboard */; };
+		AAF7C59821D21670007E5861 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C59721D21670007E5861 /* CameraViewController.swift */; };
+		AAF7C59B21D21C2B007E5861 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C59A21D21C2B007E5861 /* VideoCapture.swift */; };
+		AAF7C5A021D78C3D007E5861 /* AVCaptureDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C59D21D78C3D007E5861 /* AVCaptureDevice+Extensions.swift */; };
+		AAF7C5A121D78C3D007E5861 /* CVPixelBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C59E21D78C3D007E5861 /* CVPixelBuffer+Extensions.swift */; };
+		AAF7C5A221D78C3D007E5861 /* AVDepthData+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C59F21D78C3D007E5861 /* AVDepthData+Extensions.swift */; };
+		AAF7C5A421DBAA19007E5861 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C5A321DBAA19007E5861 /* UIImage+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAC52CF121C7F209009782D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAC52CD421C7F208009782D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC52CDB21C7F208009782D7;
+			remoteInfo = DepthCalorieCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B75CB3921E85CEE00E92684 /* DetectionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionResult.swift; sourceTree = "<group>"; };
+		6B75CB3B21E85E0100E92684 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		6B75CB3D21E863FB00E92684 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		6B75CB4421E8762800E92684 /* ClassificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResult.swift; sourceTree = "<group>"; };
+		6B75CB4621E876C500E92684 /* Estimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimation.swift; sourceTree = "<group>"; };
+		6B75CB4821E87B3E00E92684 /* MLMultiArray+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Extensions.swift"; sourceTree = "<group>"; };
+		6B75CB4A21E87C2C00E92684 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		6BB552D221ED9D5800E22371 /* DepthCalorieCam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DepthCalorieCam-Bridging-Header.h"; sourceTree = "<group>"; };
+		6BB552D721EDB17C00E22371 /* EasyImagy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyImagy.framework; path = Carthage/Build/iOS/EasyImagy.framework; sourceTree = "<group>"; };
+		AA01670F220A138900135D65 /* UNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNet.swift; sourceTree = "<group>"; };
+		AA016711220A15C100135D65 /* UNet-560.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "UNet-560.mlmodel"; sourceTree = "<group>"; };
+		AA0855C022BFE6F60030D382 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AA0855C322BFE75C0030D382 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AA0855C622BFE8B90030D382 /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Answers.framework; path = Carthage/Build/iOS/Answers.framework; sourceTree = "<group>"; };
+		AA0855D322BFE9200030D382 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AA1541DE220648F900AD0FA0 /* ResultViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultViewController.storyboard; sourceTree = "<group>"; };
+		AA1541E02206492D00AD0FA0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AA1541E22208BA6800AD0FA0 /* EstimationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationResult.swift; sourceTree = "<group>"; };
+		AA1541E42208BC9D00AD0FA0 /* ResultImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultImageView.swift; sourceTree = "<group>"; };
+		AA1541E62208C3A700AD0FA0 /* RectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectView.swift; sourceTree = "<group>"; };
+		AA1541EA2209FA9500AD0FA0 /* ResultDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultDetailViewController.storyboard; sourceTree = "<group>"; };
+		AA1541EC2209FAD900AD0FA0 /* ResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailViewController.swift; sourceTree = "<group>"; };
+		AA2E9272222C755400512C08 /* PointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
+		AA5CC609222AD6FC00E27833 /* BubbleLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLevelView.swift; sourceTree = "<group>"; };
+		AA626C1022154549003061C7 /* Xception-299.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Xception-299.mlmodel"; sourceTree = "<group>"; };
+		AA626C1222154572003061C7 /* Xception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xception.swift; sourceTree = "<group>"; };
+		AAA23DF121DEDE650036EF02 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
+		AABFA843221F297C0053416C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AABFA845221F2CD90053416C /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		AABFA847221F2D430053416C /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
+		AABFA849221F2D590053416C /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		AABFA84B221F2D6E0053416C /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
+		AABFA84D221F2D850053416C /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
+		AABFA84F221F2D960053416C /* FirebaseCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCrash.framework; path = Carthage/Build/iOS/FirebaseCrash.framework; sourceTree = "<group>"; };
+		AABFA851221F30970053416C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		AABFA853221F32810053416C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = "<group>"; };
+		AABFA854221F32820053416C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Carthage/Build/iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		AABFA857221F328D0053416C /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
+		AABFA859221F329C0053416C /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		AABFA85B221F32B70053416C /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		AABFA85D221F35100053416C /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
+		AABFA85F221F35560053416C /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		AABFA862221F37640053416C /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = Carthage/Build/iOS/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		AAC52CDC21C7F208009782D7 /* DepthCalorieCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepthCalorieCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC52CDF21C7F208009782D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAC52CE121C7F208009782D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAC52CE421C7F208009782D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAC52CE621C7F209009782D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAC52CE921C7F209009782D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAC52CEB21C7F209009782D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC52CF021C7F209009782D7 /* DepthCalorieCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepthCalorieCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC52CF421C7F209009782D7 /* DepthCalorieCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthCalorieCamTests.swift; sourceTree = "<group>"; };
+		AAC52CF621C7F209009782D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF7C59521D2164E007E5861 /* CameraViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
+		AAF7C59721D21670007E5861 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		AAF7C59A21D21C2B007E5861 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		AAF7C59D21D78C3D007E5861 /* AVCaptureDevice+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extensions.swift"; sourceTree = "<group>"; };
+		AAF7C59E21D78C3D007E5861 /* CVPixelBuffer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		AAF7C59F21D78C3D007E5861 /* AVDepthData+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVDepthData+Extensions.swift"; sourceTree = "<group>"; };
+		AAF7C5A321DBAA19007E5861 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC52CD921C7F208009782D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0855D622BFE9DA0030D382 /* GoogleToolboxForMac.framework in Frameworks */,
+				AA0855D522BFE9CB0030D382 /* FirebaseInstanceID.framework in Frameworks */,
+				AA0855D422BFE9200030D382 /* CoreTelephony.framework in Frameworks */,
+				AA0855C922BFE8DF0030D382 /* FirebaseAnalytics.framework in Frameworks */,
+				AA0855CA22BFE8DF0030D382 /* FirebaseCore.framework in Frameworks */,
+				AA0855CC22BFE8DF0030D382 /* FirebaseCrash.framework in Frameworks */,
+				AA0855CE22BFE8DF0030D382 /* GoogleAppMeasurement.framework in Frameworks */,
+				AA0855D022BFE8DF0030D382 /* GoogleUtilities.framework in Frameworks */,
+				AA0855D122BFE8DF0030D382 /* nanopb.framework in Frameworks */,
+				AA0855D222BFE8DF0030D382 /* Protobuf.framework in Frameworks */,
+				6BB552D821EDB17C00E22371 /* EasyImagy.framework in Frameworks */,
+				AABFA846221F2CD90053416C /* SVProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC52CED21C7F209009782D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B75CB3F21E86D6A00E92684 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				AA626C1022154549003061C7 /* Xception-299.mlmodel */,
+				6B75CB4421E8762800E92684 /* ClassificationResult.swift */,
+				AA626C1222154572003061C7 /* Xception.swift */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		6BB552D121ED9D1F00E22371 /* Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				AA01670F220A138900135D65 /* UNet.swift */,
+				AA016711220A15C100135D65 /* UNet-560.mlmodel */,
+			);
+			path = Segmentation;
+			sourceTree = "<group>";
+		};
+		6BB552D621EDB17C00E22371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA0855D322BFE9200030D382 /* CoreTelephony.framework */,
+				AA0855C622BFE8B90030D382 /* Answers.framework */,
+				AA0855C322BFE75C0030D382 /* libsqlite3.tbd */,
+				AA0855C022BFE6F60030D382 /* libc++.tbd */,
+				AABFA862221F37640053416C /* GoogleToolboxForMac.framework */,
+				AABFA85F221F35560053416C /* FirebaseCoreDiagnostics.framework */,
+				AABFA85D221F35100053416C /* Build */,
+				AABFA85B221F32B70053416C /* FIRAnalyticsConnector.framework */,
+				AABFA859221F329C0053416C /* FirebaseInstanceID.framework */,
+				AABFA857221F328D0053416C /* Protobuf.framework */,
+				AABFA854221F32820053416C /* Crashlytics.framework */,
+				AABFA853221F32810053416C /* Fabric.framework */,
+				AABFA851221F30970053416C /* FirebaseAnalytics.framework */,
+				AABFA84F221F2D960053416C /* FirebaseCrash.framework */,
+				AABFA84D221F2D850053416C /* FirebaseCore.framework */,
+				AABFA84B221F2D6E0053416C /* nanopb.framework */,
+				AABFA849221F2D590053416C /* GoogleAppMeasurement.framework */,
+				AABFA847221F2D430053416C /* GoogleUtilities.framework */,
+				AABFA845221F2CD90053416C /* SVProgressHUD.framework */,
+				6BB552D721EDB17C00E22371 /* EasyImagy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAA23DF021DEDDF60036EF02 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AAA23DF121DEDE650036EF02 /* CaptureButton.swift */,
+				AA1541E42208BC9D00AD0FA0 /* ResultImageView.swift */,
+				AA1541E62208C3A700AD0FA0 /* RectView.swift */,
+				AA5CC609222AD6FC00E27833 /* BubbleLevelView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AAC52CD321C7F208009782D7 = {
+			isa = PBXGroup;
+			children = (
+				AAC52CDE21C7F208009782D7 /* DepthCalorieCam */,
+				AAC52CF321C7F209009782D7 /* DepthCalorieCamTests */,
+				AAC52CDD21C7F208009782D7 /* Products */,
+				6BB552D621EDB17C00E22371 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC52CDD21C7F208009782D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC52CDC21C7F208009782D7 /* DepthCalorieCam.app */,
+				AAC52CF021C7F209009782D7 /* DepthCalorieCamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC52CDE21C7F208009782D7 /* DepthCalorieCam */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7C59321D2160A007E5861 /* Views */,
+				AAF7C59421D21618007E5861 /* Controllers */,
+				AAF7C59921D21BA6007E5861 /* Utils */,
+				AAF7C59C21D78BD6007E5861 /* Extensions */,
+				AAE12F2721E73A26004B4910 /* Estimations */,
+				AAC52CDF21C7F208009782D7 /* AppDelegate.swift */,
+				AAC52CE121C7F208009782D7 /* ViewController.swift */,
+				AAC52CE321C7F208009782D7 /* Main.storyboard */,
+				AAC52CE621C7F209009782D7 /* Assets.xcassets */,
+				AAC52CE821C7F209009782D7 /* LaunchScreen.storyboard */,
+				AAC52CEB21C7F209009782D7 /* Info.plist */,
+				6BB552D221ED9D5800E22371 /* DepthCalorieCam-Bridging-Header.h */,
+				AABFA843221F297C0053416C /* GoogleService-Info.plist */,
+			);
+			path = DepthCalorieCam;
+			sourceTree = "<group>";
+		};
+		AAC52CF321C7F209009782D7 /* DepthCalorieCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAC52CF421C7F209009782D7 /* DepthCalorieCamTests.swift */,
+				AAC52CF621C7F209009782D7 /* Info.plist */,
+			);
+			path = DepthCalorieCamTests;
+			sourceTree = "<group>";
+		};
+		AAE12F2721E73A26004B4910 /* Estimations */ = {
+			isa = PBXGroup;
+			children = (
+				6B75CB4621E876C500E92684 /* Estimation.swift */,
+				AA1541E22208BA6800AD0FA0 /* EstimationResult.swift */,
+				6B75CB3F21E86D6A00E92684 /* Classification */,
+				AAE12F2821E73A34004B4910 /* Detection */,
+				6BB552D121ED9D1F00E22371 /* Segmentation */,
+			);
+			path = Estimations;
+			sourceTree = "<group>";
+		};
+		AAE12F2821E73A34004B4910 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				6B75CB3921E85CEE00E92684 /* DetectionResult.swift */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		AAF7C59321D2160A007E5861 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7C59521D2164E007E5861 /* CameraViewController.storyboard */,
+				AA1541DE220648F900AD0FA0 /* ResultViewController.storyboard */,
+				AA1541EA2209FA9500AD0FA0 /* ResultDetailViewController.storyboard */,
+				AAA23DF021DEDDF60036EF02 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAF7C59421D21618007E5861 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7C59721D21670007E5861 /* CameraViewController.swift */,
+				AA1541E02206492D00AD0FA0 /* ResultViewController.swift */,
+				AA1541EC2209FAD900AD0FA0 /* ResultDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAF7C59921D21BA6007E5861 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7C59A21D21C2B007E5861 /* VideoCapture.swift */,
+				AA2E9272222C755400512C08 /* PointCloud.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AAF7C59C21D78BD6007E5861 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7C59D21D78C3D007E5861 /* AVCaptureDevice+Extensions.swift */,
+				AAF7C59F21D78C3D007E5861 /* AVDepthData+Extensions.swift */,
+				AAF7C59E21D78C3D007E5861 /* CVPixelBuffer+Extensions.swift */,
+				AAF7C5A321DBAA19007E5861 /* UIImage+Extensions.swift */,
+				6B75CB3B21E85E0100E92684 /* CGRect+Extensions.swift */,
+				6B75CB3D21E863FB00E92684 /* CGFloat+Extensions.swift */,
+				6B75CB4821E87B3E00E92684 /* MLMultiArray+Extensions.swift */,
+				6B75CB4A21E87C2C00E92684 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC52CDB21C7F208009782D7 /* DepthCalorieCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC52CF921C7F209009782D7 /* Build configuration list for PBXNativeTarget "DepthCalorieCam" */;
+			buildPhases = (
+				AAC52CD821C7F208009782D7 /* Sources */,
+				AAC52CD921C7F208009782D7 /* Frameworks */,
+				AAC52CDA21C7F208009782D7 /* Resources */,
+				6BB552D921EDB18D00E22371 /* Carthage */,
+				AABFA861221F35F30053416C /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DepthCalorieCam;
+			productName = DepthCalorieCam;
+			productReference = AAC52CDC21C7F208009782D7 /* DepthCalorieCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAC52CEF21C7F209009782D7 /* DepthCalorieCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC52CFC21C7F209009782D7 /* Build configuration list for PBXNativeTarget "DepthCalorieCamTests" */;
+			buildPhases = (
+				AAC52CEC21C7F209009782D7 /* Sources */,
+				AAC52CED21C7F209009782D7 /* Frameworks */,
+				AAC52CEE21C7F209009782D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAC52CF221C7F209009782D7 /* PBXTargetDependency */,
+			);
+			name = DepthCalorieCamTests;
+			productName = DepthCalorieCamTests;
+			productReference = AAC52CF021C7F209009782D7 /* DepthCalorieCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC52CD421C7F208009782D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yoshikazu Ando";
+				TargetAttributes = {
+					AAC52CDB21C7F208009782D7 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					AAC52CEF21C7F209009782D7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AAC52CDB21C7F208009782D7;
+					};
+				};
+			};
+			buildConfigurationList = AAC52CD721C7F208009782D7 /* Build configuration list for PBXProject "DepthCalorieCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAC52CD321C7F208009782D7;
+			productRefGroup = AAC52CDD21C7F208009782D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC52CDB21C7F208009782D7 /* DepthCalorieCam */,
+				AAC52CEF21C7F209009782D7 /* DepthCalorieCamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC52CDA21C7F208009782D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC52CEA21C7F209009782D7 /* LaunchScreen.storyboard in Resources */,
+				AA1541EB2209FA9500AD0FA0 /* ResultDetailViewController.storyboard in Resources */,
+				AAC52CE721C7F209009782D7 /* Assets.xcassets in Resources */,
+				AAF7C59621D2164E007E5861 /* CameraViewController.storyboard in Resources */,
+				AA1541DF220648F900AD0FA0 /* ResultViewController.storyboard in Resources */,
+				AAC52CE521C7F208009782D7 /* Main.storyboard in Resources */,
+				AABFA844221F297C0053416C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC52CEE21C7F209009782D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BB552D921EDB18D00E22371 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EasyImagy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EasyImagy.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		AABFA861221F35F30053416C /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Carthage/Build/iOS/Fabric.framework/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC52CD821C7F208009782D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF7C59B21D21C2B007E5861 /* VideoCapture.swift in Sources */,
+				6B75CB4921E87B3E00E92684 /* MLMultiArray+Extensions.swift in Sources */,
+				AAC52CE221C7F208009782D7 /* ViewController.swift in Sources */,
+				6B75CB3E21E863FB00E92684 /* CGFloat+Extensions.swift in Sources */,
+				AAC52CE021C7F208009782D7 /* AppDelegate.swift in Sources */,
+				AAF7C5A121D78C3D007E5861 /* CVPixelBuffer+Extensions.swift in Sources */,
+				AA1541E12206492D00AD0FA0 /* ResultViewController.swift in Sources */,
+				AA1541E52208BC9D00AD0FA0 /* ResultImageView.swift in Sources */,
+				AAF7C5A221D78C3D007E5861 /* AVDepthData+Extensions.swift in Sources */,
+				AA016710220A138900135D65 /* UNet.swift in Sources */,
+				AA1541ED2209FAD900AD0FA0 /* ResultDetailViewController.swift in Sources */,
+				AA1541E72208C3A700AD0FA0 /* RectView.swift in Sources */,
+				6B75CB3A21E85CEE00E92684 /* DetectionResult.swift in Sources */,
+				AA2E9273222C755400512C08 /* PointCloud.swift in Sources */,
+				AA5CC60A222AD6FC00E27833 /* BubbleLevelView.swift in Sources */,
+				6B75CB3C21E85E0100E92684 /* CGRect+Extensions.swift in Sources */,
+				AA626C1122154549003061C7 /* Xception-299.mlmodel in Sources */,
+				AA1541E32208BA6800AD0FA0 /* EstimationResult.swift in Sources */,
+				6B75CB4521E8762800E92684 /* ClassificationResult.swift in Sources */,
+				6B75CB4B21E87C2C00E92684 /* Array+Extensions.swift in Sources */,
+				6B75CB4721E876C500E92684 /* Estimation.swift in Sources */,
+				AAF7C59821D21670007E5861 /* CameraViewController.swift in Sources */,
+				AA016712220A15C100135D65 /* UNet-560.mlmodel in Sources */,
+				AAF7C5A021D78C3D007E5861 /* AVCaptureDevice+Extensions.swift in Sources */,
+				AA626C1322154572003061C7 /* Xception.swift in Sources */,
+				AAA23DF221DEDE650036EF02 /* CaptureButton.swift in Sources */,
+				AAF7C5A421DBAA19007E5861 /* UIImage+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC52CEC21C7F209009782D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC52CF521C7F209009782D7 /* DepthCalorieCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAC52CF221C7F209009782D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAC52CDB21C7F208009782D7 /* DepthCalorieCam */;
+			targetProxy = AAC52CF121C7F209009782D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAC52CE321C7F208009782D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC52CE421C7F208009782D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAC52CE821C7F209009782D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC52CE921C7F209009782D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC52CF721C7F209009782D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAC52CF821C7F209009782D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC52CFA21C7F209009782D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				BUNDLE_DISPLAY_NAME_PREFIX = "🔴";
+				BUNDLE_IDENTIFIER_SUFFIX = .develop;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5UBLN857DL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DepthCalorieCam",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DepthCalorieCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andooown.DepthCalorieCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "General-Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "DepthCalorieCam/DepthCalorieCam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		AAC52CFB21C7F209009782D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_DISPLAY_NAME_PREFIX = "";
+				BUNDLE_IDENTIFIER_SUFFIX = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 5UBLN857DL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DepthCalorieCam",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DepthCalorieCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andooown.DepthCalorieCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "DepthCalorieCam-Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "DepthCalorieCam/DepthCalorieCam-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		AAC52CFD21C7F209009782D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5UBLN857DL;
+				INFOPLIST_FILE = DepthCalorieCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andooown.DepthCalorieCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepthCalorieCam.app/DepthCalorieCam";
+			};
+			name = Debug;
+		};
+		AAC52CFE21C7F209009782D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5UBLN857DL;
+				INFOPLIST_FILE = DepthCalorieCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andooown.DepthCalorieCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepthCalorieCam.app/DepthCalorieCam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC52CD721C7F208009782D7 /* Build configuration list for PBXProject "DepthCalorieCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC52CF721C7F209009782D7 /* Debug */,
+				AAC52CF821C7F209009782D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC52CF921C7F209009782D7 /* Build configuration list for PBXNativeTarget "DepthCalorieCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC52CFA21C7F209009782D7 /* Debug */,
+				AAC52CFB21C7F209009782D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC52CFC21C7F209009782D7 /* Build configuration list for PBXNativeTarget "DepthCalorieCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC52CFD21C7F209009782D7 /* Debug */,
+				AAC52CFE21C7F209009782D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC52CD421C7F208009782D7 /* Project object */;
+}

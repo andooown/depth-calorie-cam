@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DJY-jl-Pin">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="4UX-hA-SH7">
+            <objects>
+                <viewController id="DJY-jl-Pin" customClass="CameraViewController" customModule="DepthCalorieCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hKd-oi-Tnq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZ1-cJ-ELh">
+                                <rect key="frame" x="0.0" y="172" width="414" height="552"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tZ1-cJ-ELh" secondAttribute="height" multiplier="3:4" id="Kjg-Jd-nRq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWu-o2-txc" userLabel="Sub Camera View">
+                                <rect key="frame" x="281.66666666666669" y="180" width="124.33333333333331" height="165.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VWu-o2-txc" secondAttribute="height" multiplier="3:4" id="pdQ-fz-shg"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-rr-GET" userLabel="Spacer1">
+                                <rect key="frame" x="182" y="724" width="50" height="16.333333333333371"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QrH-ET-awd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zn5-Tq-IZd" customClass="CaptureButton" customModule="DepthCalorieCam" customModuleProvider="target">
+                                <rect key="frame" x="148.33333333333334" y="740.33333333333337" width="117.33333333333334" height="117.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zn5-Tq-IZd" secondAttribute="height" multiplier="1:1" id="jPd-Xa-XGJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerCircleWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerCircleMargin">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="captureButtonTapped:" destination="DJY-jl-Pin" eventType="touchUpInside" id="1Vu-K6-fkB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-et-QoD" customClass="BubbleLevelView" customModule="DepthCalorieCam" customModuleProvider="target">
+                                <rect key="frame" x="8" y="52" width="112" height="112"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aT3-et-QoD" secondAttribute="height" multiplier="1:1" id="ddg-Jc-Uei"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bubbleSizeRatio">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bubbleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundCircleColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="guideCircleSizeRatio">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="guideWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="errorWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IYX-px-HoA" firstAttribute="trailing" secondItem="VWu-o2-txc" secondAttribute="trailing" constant="8" id="341-Zv-r90"/>
+                            <constraint firstItem="zn5-Tq-IZd" firstAttribute="centerX" secondItem="hKd-oi-Tnq" secondAttribute="centerX" id="42Y-va-J5x"/>
+                            <constraint firstItem="aT3-et-QoD" firstAttribute="top" secondItem="IYX-px-HoA" secondAttribute="top" constant="8" id="73H-ly-CKS"/>
+                            <constraint firstItem="VWu-o2-txc" firstAttribute="width" secondItem="tZ1-cJ-ELh" secondAttribute="width" multiplier="0.3" id="Afd-Qf-gFk"/>
+                            <constraint firstItem="tZ1-cJ-ELh" firstAttribute="centerX" secondItem="hKd-oi-Tnq" secondAttribute="centerX" id="DXx-rP-DPE"/>
+                            <constraint firstItem="YnB-rr-GET" firstAttribute="height" secondItem="IYX-px-HoA" secondAttribute="height" multiplier="0.02" id="I5s-v3-Q1Y"/>
+                            <constraint firstItem="YnB-rr-GET" firstAttribute="centerX" secondItem="hKd-oi-Tnq" secondAttribute="centerX" id="QfS-Lb-seC"/>
+                            <constraint firstItem="VWu-o2-txc" firstAttribute="top" secondItem="tZ1-cJ-ELh" secondAttribute="top" constant="8" id="Qje-rt-IBL"/>
+                            <constraint firstItem="tZ1-cJ-ELh" firstAttribute="width" secondItem="IYX-px-HoA" secondAttribute="width" id="a3m-x8-fDc"/>
+                            <constraint firstItem="aT3-et-QoD" firstAttribute="leading" secondItem="IYX-px-HoA" secondAttribute="leading" constant="8" id="bnm-iF-4My"/>
+                            <constraint firstItem="zn5-Tq-IZd" firstAttribute="top" secondItem="YnB-rr-GET" secondAttribute="bottom" id="iEL-ZW-UqP"/>
+                            <constraint firstItem="tZ1-cJ-ELh" firstAttribute="centerY" secondItem="hKd-oi-Tnq" secondAttribute="centerY" id="kPJ-XE-crV"/>
+                            <constraint firstItem="IYX-px-HoA" firstAttribute="bottom" secondItem="zn5-Tq-IZd" secondAttribute="bottom" constant="4" id="oDf-gP-zlb"/>
+                            <constraint firstItem="aT3-et-QoD" firstAttribute="bottom" secondItem="tZ1-cJ-ELh" secondAttribute="top" constant="-8" id="sWM-jC-RQ0"/>
+                            <constraint firstItem="YnB-rr-GET" firstAttribute="top" secondItem="tZ1-cJ-ELh" secondAttribute="bottom" id="v1d-IS-OAp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IYX-px-HoA"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="tZ1-cJ-ELh" id="kwx-uO-XGr"/>
+                        <outlet property="captureButton" destination="zn5-Tq-IZd" id="jJh-EU-sBo"/>
+                        <outlet property="subCameraView" destination="VWu-o2-txc" id="v8e-41-DeZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gno-xQ-Tk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="73"/>
+        </scene>
+    </scenes>
+</document>

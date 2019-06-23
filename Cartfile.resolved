@@ -1,0 +1,7 @@
+binary "https://building42.github.io/Specs/Carthage/iOS/Answers.json" "1.4.0"
+binary "https://building42.github.io/Specs/Carthage/iOS/Crashlytics.json" "3.13.1"
+binary "https://building42.github.io/Specs/Carthage/iOS/Fabric.json" "1.10.1"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.3.0"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseCrashBinary.json" "5.20.0"
+github "SVProgressHUD/SVProgressHUD" "2.2.5"
+github "koher/EasyImagy" "0.5.3"

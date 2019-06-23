@@ -1,0 +1,26 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "5.20.0",
+  "iOS" : [
+    {
+      "name" : "GoogleToolboxForMac",
+      "hash" : "b853db675015b363100569a0980c807205d584253d3594e4da2c3b6393127714"
+    },
+    {
+      "name" : "FirebaseCrash",
+      "hash" : "a7454705775e609799d2c74af2e197a013fa0502be64f3a3d9d31cf37b69522c"
+    },
+    {
+      "name" : "Protobuf",
+      "hash" : "2e07e3d2c518f4b4fa5bf2650185d9e55809d94af10ef1b5661fa391b79091e2"
+    }
+  ]
+}

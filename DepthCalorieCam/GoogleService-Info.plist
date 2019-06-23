@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>984967151456-03oqhm81gig6so5a3aigu0og9p8lqa3s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.984967151456-03oqhm81gig6so5a3aigu0og9p8lqa3s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAf-0jLq-nhh9aVBWcQz7oQCvdB__toIck</string>
+	<key>GCM_SENDER_ID</key>
+	<string>984967151456</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andooown.DepthCalorieCam</string>
+	<key>PROJECT_ID</key>
+	<string>depthcaloriecam</string>
+	<key>STORAGE_BUCKET</key>
+	<string>depthcaloriecam.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:984967151456:ios:ab121ec1ece5568c</string>
+	<key>DATABASE_URL</key>
+	<string>https://depthcaloriecam.firebaseio.com</string>
+</dict>
+</plist>

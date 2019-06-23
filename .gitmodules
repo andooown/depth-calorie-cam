@@ -1,0 +1,3 @@
+[submodule "fastlane"]
+	path = fastlane
+	url = git@github.com:andooown/depth-calorie-cam-fastlane.git

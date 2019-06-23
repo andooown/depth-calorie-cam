@@ -1,0 +1,11 @@
+framework module EasyImagy {
+  umbrella header "EasyImagy.h"
+
+  export *
+  module * { export * }
+}
+
+module EasyImagy.Swift {
+    header "EasyImagy-Swift.h"
+    requires objc
+}
