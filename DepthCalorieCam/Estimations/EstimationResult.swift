@@ -10,7 +10,17 @@ import Foundation
 
 struct EstimationResult {
 
-    let className: String
+    enum FoodClass: String, CaseIterable {
+        case subuta
+        case karaage
+        case croquette
+
+        var className: String {
+            return NSLocalizedString(self.rawValue, comment: "")
+        }
+    }
+
+    let foodClass: FoodClass
     let normalizedRect: CGRect
     let area: Double?
     let volume: Double?

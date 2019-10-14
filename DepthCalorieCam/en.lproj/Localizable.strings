@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  DepthCalorieCam
+
+  Created by Yoshikazu Ando on 2019/10/15.
+  Copyright © 2019 Yoshikazu Ando. All rights reserved.
+*/
+
+// Food
+"subuta" = "Sweet and sour pork";
+"karaage" = "Fried chicken";
+"croquette" = "Croquette";
+
+// CameraViewController
+"unsupported_device_message" = "This device is not supported.";
+"depth_unavailable_message" = "Calorie estimation is only available on device which has dual camera for depth.";
+
+// ResultDetailViewController
+"close_button_text" = "Close";
