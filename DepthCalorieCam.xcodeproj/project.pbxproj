@@ -34,6 +34,7 @@
 		AA1541E72208C3A700AD0FA0 /* RectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541E62208C3A700AD0FA0 /* RectView.swift */; };
 		AA1541EB2209FA9500AD0FA0 /* ResultDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1541EA2209FA9500AD0FA0 /* ResultDetailViewController.storyboard */; };
 		AA1541ED2209FAD900AD0FA0 /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1541EC2209FAD900AD0FA0 /* ResultDetailViewController.swift */; };
+		AA2207232354E0ED00B73AA7 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2207222354E0ED00B73AA7 /* R.generated.swift */; };
 		AA2E9273222C755400512C08 /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2E9272222C755400512C08 /* PointCloud.swift */; };
 		AA5CC60A222AD6FC00E27833 /* BubbleLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CC609222AD6FC00E27833 /* BubbleLevelView.swift */; };
 		AA626C1122154549003061C7 /* Xception-299.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AA626C1022154549003061C7 /* Xception-299.mlmodel */; };
@@ -89,6 +90,7 @@
 		AA1541E62208C3A700AD0FA0 /* RectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectView.swift; sourceTree = "<group>"; };
 		AA1541EA2209FA9500AD0FA0 /* ResultDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultDetailViewController.storyboard; sourceTree = "<group>"; };
 		AA1541EC2209FAD900AD0FA0 /* ResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailViewController.swift; sourceTree = "<group>"; };
+		AA2207222354E0ED00B73AA7 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = Rswift/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AA2E9272222C755400512C08 /* PointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
 		AA5CC609222AD6FC00E27833 /* BubbleLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLevelView.swift; sourceTree = "<group>"; };
 		AA626C1022154549003061C7 /* Xception-299.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Xception-299.mlmodel"; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				AAC52CEB21C7F209009782D7 /* Info.plist */,
 				6BB552D221ED9D5800E22371 /* DepthCalorieCam-Bridging-Header.h */,
 				AABFA843221F297C0053416C /* GoogleService-Info.plist */,
+				AA2207222354E0ED00B73AA7 /* R.generated.swift */,
 			);
 			path = DepthCalorieCam;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAC52CF921C7F209009782D7 /* Build configuration list for PBXNativeTarget "DepthCalorieCam" */;
 			buildPhases = (
+				AA2207212354E00500B73AA7 /* R.swift */,
 				AAC52CD821C7F208009782D7 /* Sources */,
 				AAC52CD921C7F208009782D7 /* Frameworks */,
 				AAC52CDA21C7F208009782D7 /* Resources */,
@@ -444,6 +448,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/EasyImagy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -455,6 +460,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		AA2207212354E00500B73AA7 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Rswift/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/Rswift/rswift\" generate \"$SRCROOT/Rswift/R.generated.swift\"\n";
 		};
 		AABFA861221F35F30053416C /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -497,6 +522,7 @@
 				6B75CB3A21E85CEE00E92684 /* DetectionResult.swift in Sources */,
 				AA2E9273222C755400512C08 /* PointCloud.swift in Sources */,
 				AA5CC60A222AD6FC00E27833 /* BubbleLevelView.swift in Sources */,
+				AA2207232354E0ED00B73AA7 /* R.generated.swift in Sources */,
 				6B75CB3C21E85E0100E92684 /* CGRect+Extensions.swift in Sources */,
 				AA626C1122154549003061C7 /* Xception-299.mlmodel in Sources */,
 				AA1541E32208BA6800AD0FA0 /* EstimationResult.swift in Sources */,

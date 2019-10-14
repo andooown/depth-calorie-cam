@@ -40,3 +40,6 @@ Carthage/Checkouts
 # OpenCV
 DepthCalorieCam/opencv2.framework
 
+# R.swift
+*.generated.swift
+
