@@ -3,7 +3,7 @@
   "iOS" : [
     {
       "name" : "EasyImagy",
-      "hash" : "f622e5b9e5b0cc897e715c413b20d3f53ea872990c26829c8085f3eaa81ac595",
+      "hash" : "462b1a5fc199d0eac503364d002c6ff477e98fa3ba2fce3844a3e1d7518f073a",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     }
   ]

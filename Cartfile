@@ -1,8 +1,11 @@
-github "koher/EasyImagy" ~> 0.5.0
-github "SVProgressHUD/SVProgressHUD"
-
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseCrashBinary.json"
 binary "https://building42.github.io/Specs/Carthage/iOS/Fabric.json"
 binary "https://building42.github.io/Specs/Carthage/iOS/Answers.json"
 binary "https://building42.github.io/Specs/Carthage/iOS/Crashlytics.json"
+
+github "koher/EasyImagy" ~> 0.5.0
+github "SVProgressHUD/SVProgressHUD"
+
+github "mac-cain13/R.swift.Library"
+
