@@ -24,6 +24,11 @@ class ResultDetailViewController: UIViewController {
     @IBOutlet weak var classLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton! {
+        didSet {
+            closeButton.setTitle(R.string.localizable.close_button_text(), for: .normal)
+        }
+    }
     
     @IBOutlet weak var classLabelHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var calorieLabelHeightConstraint: NSLayoutConstraint!
@@ -52,7 +57,7 @@ class ResultDetailViewController: UIViewController {
         guard let result = self.estimationResult else { return }
         
         self.imageView.image = result.rgbImage
-        self.classLabel.text = result.className
+        self.classLabel.text = result.foodClass.className
         
         if let calorie = result.calorie {
             self.calorieLabel.text = String(format: "%.1f kcal", calorie)

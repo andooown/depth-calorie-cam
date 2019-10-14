@@ -66,7 +66,7 @@ class CameraViewController: UIViewController {
         Xception.shared.setup()
 
         guard let videoCapture = VideoCapture(previewContainer: nil) else {
-            self.showDialog(message: "この端末は動作対象外です。")
+            self.showDialog(message: R.string.localizable.unsupported_device_message())
             return
         }
 
@@ -102,7 +102,7 @@ class CameraViewController: UIViewController {
                 self.currentFrame = (pixelBuffer, nil)
             }
 
-            self.showDialog(message: "カロリー量の推定は深度が取得できるデュアルカメラを搭載した端末のみで利用可能です。")
+            self.showDialog(message: R.string.localizable.depth_unavailable_message())
         }
 
         self.videoCapture.startCapture()

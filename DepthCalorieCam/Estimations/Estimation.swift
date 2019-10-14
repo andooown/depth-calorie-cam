@@ -130,7 +130,9 @@ class Estimation {
 
             let calorie = res.volume * 1e6 * coefs[0] + coefs[1]
 
-            estimationResults.append(EstimationResult(className: res.className,
+            // TODO: className ではなく EstimationResult.FoodClass で引き回す
+            let foodClassIndex = classNames.firstIndex(of: res.className) ?? 0
+            estimationResults.append(EstimationResult(foodClass: EstimationResult.FoodClass.allCases[foodClassIndex],
                                                       normalizedRect: res.rect,
                                                       area: res.area,
                                                       volume: res.volume,
@@ -225,7 +227,9 @@ class Estimation {
                 }
             }
 
-            return EstimationResult(className: res.className,
+            // TODO: className ではなく EstimationResult.FoodClass で引き回す
+            let foodClassIndex = classNames.firstIndex(of: res.className) ?? 0
+            return EstimationResult(foodClass: EstimationResult.FoodClass.allCases[foodClassIndex],
                                     normalizedRect: res.rect,
                                     area: nil,
                                     volume: nil,

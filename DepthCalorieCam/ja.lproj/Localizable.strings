@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  DepthCalorieCam
+
+  Created by Yoshikazu Ando on 2019/10/15.
+  Copyright © 2019 Yoshikazu Ando. All rights reserved.
+*/
+
+// Food
+"subuta" = "酢豚";
+"karaage" = "唐揚げ";
+"croquette" = "コロッケ";
+
+// CameraViewController
+"unsupported_device_message" = "この端末は動作対象外です。";
+"depth_unavailable_message" = "カロリー量の推定は深度が取得できるデュアルカメラを搭載した端末のみで利用可能です。";
+
+// ResultDetailViewController
+"close_button_text" = "閉じる";
