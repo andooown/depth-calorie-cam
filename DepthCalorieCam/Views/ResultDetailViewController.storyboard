@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NYI-b8-u4w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NYI-b8-u4w">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,7 +44,7 @@
                                             <action selector="segmentedValueChanged:" destination="NYI-b8-u4w" eventType="valueChanged" id="6e6-bp-Fbg"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="味噌汁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZR-Or-zWE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="味噌汁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dZR-Or-zWE">
                                         <rect key="frame" x="8" y="379" width="358" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="4io-Vz-Iar"/>
@@ -129,6 +129,7 @@
                         <outlet property="calorieLabelHeightConstraint" destination="fdi-F8-A75" id="xk6-MC-B4Y"/>
                         <outlet property="classLabel" destination="dZR-Or-zWE" id="Z4V-sz-4Wx"/>
                         <outlet property="classLabelHeightConstraint" destination="4io-Vz-Iar" id="JVv-PQ-t2z"/>
+                        <outlet property="closeButton" destination="eaA-Y4-cOy" id="aqE-BS-g8A"/>
                         <outlet property="contentView" destination="qB2-QI-0JO" id="xHb-AZ-hx5"/>
                         <outlet property="imageView" destination="gJi-cm-H82" id="GtH-iA-1SV"/>
                         <outlet property="infoLabel" destination="1LR-yS-vbf" id="XVg-Ul-yL9"/>

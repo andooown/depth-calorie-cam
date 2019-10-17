@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "3.13.1",
+  "commitish" : "3.14.0",
   "iOS" : [
     {
       "name" : "Crashlytics",
-      "hash" : "b5cc72eba5cba355c89ae0bd8062d9351da64f887be4f5e043f50731979ec2a4"
+      "hash" : "dfd158c21014f5fec76d2e50708e11b0722e6999915c5d4e6cafa8ffbf285c62"
     }
   ]
 }
